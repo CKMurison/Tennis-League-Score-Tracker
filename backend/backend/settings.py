@@ -52,6 +52,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+REST_FRAMEWORK = {'DEAFAULT_PERMISSION_CLASSES': [
+    'rest_framework.permissions.AllowAny']}
+
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
